@@ -24,7 +24,7 @@ export default function AnnouncementBar({ isVisible, onClose }: AnnouncementBarP
             <div className="flex items-center gap-3">
               <span className="w-1.5 h-1.5 bg-brand-pink rounded-full animate-pulse shadow-[0_0_8px_rgba(232,160,191,0.5)]" />
               <span className="text-[10px] uppercase font-bold tracking-[0.4em] text-brand-text/70">
-                Opening Soon <span className="text-brand-pink-dark italic">Winter Wonderland 2025</span>
+                Opening Soon <span className="text-brand-pink-dark italic">Winter Wonderland 2026</span>
               </span>
             </div>
             
