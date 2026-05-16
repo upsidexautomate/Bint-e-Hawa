@@ -54,6 +54,13 @@ export default function Hero() {
         style={{ y: yContent, opacity }}
         className="relative z-20 max-w-5xl mx-auto px-6 text-center"
       >
+        <div className="mx-auto mb-8 w-fit">
+          <img
+            src="/Asset%201.svg"
+            alt="Bint-e-Hawa logo"
+            className="w-20 h-20 md:w-24 md:h-24 mx-auto object-contain"
+          />
+        </div>
         {/* Top Marker */}
         <motion.div
            initial={{ opacity: 0, y: 20 }}

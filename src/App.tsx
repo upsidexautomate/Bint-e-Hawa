@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence, useScroll, useSpring } from "motion/react";
-import { Flower2 } from "lucide-react";
 import AnnouncementBar from "./components/layout/AnnouncementBar";
 import Navbar from "./components/layout/Navbar";
 import Hero from "./components/sections/Hero";
+import Logo from "./components/ui/Logo";
 import EventCategories from "./components/sections/EventCategories";
 import FeaturedEvents from "./components/sections/FeaturedEvents";
 import About from "./components/sections/About";
@@ -76,8 +76,8 @@ export default function App() {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex flex-col items-center"
               >
-                <div className="w-20 h-20 bg-brand-pink rounded-full flex items-center justify-center text-white mb-8 shadow-2xl relative">
-                  <Flower2 size={40} className="relative z-10" />
+                    <div className="w-20 h-20 bg-brand-pink rounded-full flex items-center justify-center text-white mb-8 shadow-2xl relative">
+                  <Logo imgClassName="w-12 h-12" alt="Bint-e-Hawa logo" />
                   <motion.div 
                     animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
                     transition={{ duration: 2, repeat: Infinity }}

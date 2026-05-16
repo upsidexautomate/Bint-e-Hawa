@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence, useScroll, useTransform } from "motion/react";
-import { Menu, X, ArrowUpRight, Flower2 } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 import Button from "../ui/Button";
+import Logo from "../ui/Logo";
 
 export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
   const [scrolled, setScrolled] = useState(false);
@@ -64,12 +65,7 @@ export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
         className={`fixed left-1/2 -translate-x-1/2 z-[100] backdrop-blur-lg border border-brand-pink/10 rounded-full shadow-lg hidden md:flex transition-shadow duration-700 px-6 py-3 items-center justify-between`}
       >
         <div className="flex items-center gap-3 cursor-pointer group" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <div className="w-8 h-8 bg-brand-pink flex items-center justify-center rounded-full group-hover:rotate-180 transition-transform duration-700 shadow-md">
-            <Flower2 size={16} className="text-white" />
-          </div>
-          <span className="text-lg font-display font-light tracking-[0.1em] text-brand-text uppercase italic">
-            Bint-e-Hawa
-          </span>
+          <Logo imgClassName="w-8 h-8" showText={true} />
         </div>
 
         <div className="flex items-center gap-12">
@@ -108,12 +104,7 @@ export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
         }`}
       >
         <div className="flex items-center gap-2" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
-          <div className="w-7 h-7 bg-brand-pink flex items-center justify-center rounded-full">
-            <Flower2 size={14} className="text-white" />
-          </div>
-          <span className="text-base font-display font-light tracking-[0.1em] text-brand-text uppercase italic">
-            Bint-e-Hawa
-          </span>
+          <Logo imgClassName="w-7 h-7" showText={true} />
         </div>
 
         <button
@@ -136,14 +127,7 @@ export default function Navbar({ isHidden = false }: { isHidden?: boolean }) {
           >
             {/* Menu Header */}
             <div className="flex items-center justify-between px-6 py-6">
-              <div className="flex items-center gap-2">
-                <div className="w-7 h-7 bg-brand-pink flex items-center justify-center rounded-full">
-                  <Flower2 size={14} className="text-white" />
-                </div>
-                <span className="text-base font-display font-light tracking-[0.1em] text-brand-text uppercase italic">
-                  Bint-e-Hawa
-                </span>
-              </div>
+              <Logo imgClassName="w-7 h-7" showText={true} wrapperClassName="flex items-center gap-2" />
               <button
                 className="text-brand-text w-10 h-10 flex items-center justify-center rounded-full bg-brand-pink/10 hover:bg-brand-pink/20 transition-all"
                 onClick={() => setMobileMenuOpen(false)}
