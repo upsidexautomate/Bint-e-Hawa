@@ -14,7 +14,7 @@ export default function Logo({
   return (
     <div className={wrapperClassName}>
       <img
-        src="/Asset%201.svg"
+        src="/logo.svg"
         alt={alt}
         className={`${imgClassName} object-contain`}
       />

@@ -1,6 +1,7 @@
 import { motion, useScroll, useTransform } from "motion/react";
 import { ChevronDown, Sparkles } from "lucide-react";
 import Button from "../ui/Button";
+import Logo from "../ui/Logo";
 
 export default function Hero() {
   const { scrollY } = useScroll();
@@ -55,11 +56,7 @@ export default function Hero() {
         className="relative z-20 max-w-5xl mx-auto px-6 text-center"
       >
         <div className="mx-auto mb-8 w-fit">
-          <img
-            src="/Asset%201.svg"
-            alt="Bint-e-Hawa logo"
-            className="w-20 h-20 md:w-24 md:h-24 mx-auto object-contain"
-          />
+          <Logo imgClassName="w-20 h-20 md:w-24 md:h-24" alt="Bint-e-Hawa logo" />
         </div>
         {/* Top Marker */}
         <motion.div
