@@ -76,8 +76,8 @@ export default function App() {
                 animate={{ opacity: 1, y: 0 }}
                 className="flex flex-col items-center"
               >
-                    <div className="w-20 h-20 bg-brand-pink rounded-full flex items-center justify-center text-white mb-8 shadow-2xl relative">
-                  <Logo imgClassName="w-12 h-12" alt="Bint-e-Hawa logo" />
+                <div className="w-20 h-20 bg-brand-pink rounded-full flex items-center justify-center text-white mb-8 shadow-2xl relative">
+                  <Logo imgClassName="w-12 h-12" alt="Bint-e-Hawa logo" white={true} />
                   <motion.div 
                     animate={{ scale: [1, 1.2, 1], opacity: [0.3, 0.6, 0.3] }}
                     transition={{ duration: 2, repeat: Infinity }}
